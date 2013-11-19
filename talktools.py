@@ -27,6 +27,7 @@ def website(url, name=None, width=800, height=450):
 
     html.append('<iframe src="%s"  width="%s" height="%s">' % 
                 (prefix(url), width, height))
+    html.append('</iframe>')
     return HTML('\n'.join(html))
 
 
